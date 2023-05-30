@@ -1,6 +1,6 @@
 package com.technical.assessment.metricconversionsystem.model.mapper;
 
-import com.technical.assessment.metricconversionsystem.ConversionTypeEntityDto;
+import com.technical.assessment.metricconversionsystem.model.dto.ConversionTypeEntityDto;
 import com.technical.assessment.metricconversionsystem.model.ConversionTypeEntity;
 import com.technical.assessment.metricconversionsystem.model.UnitConversionEntity;
 import com.technical.assessment.metricconversionsystem.model.dto.NewUnitConversionDTO;
