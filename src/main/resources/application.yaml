@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: metric-conversion-system
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?charSet=LATIN1&currentSchema=metric_conversions
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
+    schemas: metric_conversions
+    placeholderReplacement: false
+  sql:
+    init:
+      platform: postgres
+      mode: always
+      continue-on-error: true
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
